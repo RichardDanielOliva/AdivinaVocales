@@ -1,0 +1,30 @@
+Ejercicio063_AdivinaVocales
+
+Deseamos hacer un juego para que un infante aprenda las vocales.
+Para ello implementa una interfaz 'Jugable', que tiene los siguientes
+metodos. 
+
+rellenaConsonantes()
+rellenaVocales(vocales), *donde vocales es el numero de vocales que quiero
+generar(vocales aleatorias en posiciones aleatorias)
+mostrar()
+compruebaAcierto(coordenada x, coordenada y): dicho metodo lanza una excepcion
+'CoordenadaIncorrecta', si estuviese fuera de rango
+
+Tendra una clase 'AdivinaVocales', que implementa el interface Jugable, tiene
+como atributos privados: el tablero 20 x 20, un numero de vocales(es un entero),
+un constructor(que le paso el numero de vocales y él llama al rellenarConsonantes
+y al rellenarVocales(vocales)). 
+
+Por ultimo tiene un metodo Juega() que interactua
+con el usuario, pidiendole coordenadas y mostrando los resultados. El metodo finaliza
+cuando el numero de vocales sea 0 (ya las encontraria todas). 
+*Recuerda que cada vez que se acierte una vocal, hay que reducir el contador y
+cambiar esa vocal por un asterisco.
+
+1. Creamos la excepcion
+2. Creamos el interface
+3. Creo la clase AdivinaVocales, que implementa la interface!
+
+Para rellenar las vocales tengo que generar vocal, coordenada x y coordenada y, para
+despues meterla en esa coordenada del array (si hay consonante pues la machaca).
